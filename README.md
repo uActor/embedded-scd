@@ -11,6 +11,14 @@ In your ESP-IDF application project root:
  git clone --recursive git@gitlab.lrz.de:cm/sensirion-embedded-scd.git components/embedded-scd
 ```
 
+Include the components from your main/CMakeLists.txt:
+
+```
+ ...
+ set(COMPONENT_REQUIRES embedded-scd)
+ ...
+```
+
 ## Repository content
 * embedded-common (submodule repository for the common embedded driver HAL)
 * scd30 (SCD30 driver related)
