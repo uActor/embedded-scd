@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "embedded-common/sensirion_common.c"
+        "embedded-common/hw_i2c/sensirion_hw_i2c_implementation.c"
+        "scd30/scd30.c"
+    INCLUDE_DIRS
+        "."
+        "embedded-common"
+        "scd-common"
+        "scd30"
+)
