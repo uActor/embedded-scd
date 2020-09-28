@@ -27,7 +27,7 @@ Include the components from your main/CMakeLists.txt:
 
 The driver does not intialize ESP-IDF I2C driver, so it must be done by the application.
 
-**Note**: The sensor does longer I2C clock stretching than the ESP32 supports by default. This will result in frequency errors. To alleviate this, set the clock stretch to maximum while initializing the I2C drivers: `i2c_set_timeout( I2C_NUM_0, 0xFFFFF );`
+**Note**: The sensor does longer I2C clock stretching than the ESP32 supports by default. This will result in frequent errors. To alleviate this, set the clock stretch to maximum while initializing the I2C drivers: `i2c_set_timeout( I2C_NUM_0, 0xFFFFF );`
 
 Example application:
 
